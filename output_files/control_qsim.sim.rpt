@@ -1,0 +1,456 @@
+Simulator report for control_qsim
+Mon Nov 25 14:32:38 2024
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 200 nodes    ;
+; Simulation Coverage         ;      50.24 % ;
+; Total Number of Transitions ; 11772        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                         ;
++--------------------------------------------------------------------------------------------+---------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                       ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                    ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                          ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                           ;               ;
+; Vector input source                                                                        ; F:/Users/Administrador/Documents/GitHub/control/Waveform2.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                            ; On            ;
+; Check outputs                                                                              ; Off                                                           ; Off           ;
+; Report simulation coverage                                                                 ; On                                                            ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                            ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                            ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                            ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                           ; Off           ;
+; Detect glitches                                                                            ; Off                                                           ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                           ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                           ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                           ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                           ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                            ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                    ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                           ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                           ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                          ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport                                                     ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport                                                     ; Transport     ;
++--------------------------------------------------------------------------------------------+---------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      50.24 % ;
+; Total nodes checked                                 ; 200          ;
+; Total output ports checked                          ; 207          ;
+; Total output ports with complete 1/0-value coverage ; 104          ;
+; Total output ports with no 1/0-value coverage       ; 85           ;
+; Total output ports with no 1-value coverage         ; 88           ;
+; Total output ports with no 0-value coverage         ; 100          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                                                             ;
++------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                              ; Output Port Name                                                                                                            ; Output Port Type ;
++------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+------------------+
+; |actualizacion_paredes|clock                                                                                           ; |actualizacion_paredes|clock                                                                                                ; out              ;
+; |actualizacion_paredes|S                                                                                               ; |actualizacion_paredes|S                                                                                                    ; out              ;
+; |actualizacion_paredes|GD                                                                                              ; |actualizacion_paredes|GD                                                                                                   ; out              ;
+; |actualizacion_paredes|Habilitacion                                                                                    ; |actualizacion_paredes|Habilitacion                                                                                         ; pin_out          ;
+; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita0 ; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita0      ; combout          ;
+; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita0 ; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita0~COUT ; cout             ;
+; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita1 ; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita1      ; combout          ;
+; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita1 ; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita1~COUT ; cout             ;
+; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita2 ; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita2      ; combout          ;
+; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita2 ; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita2~COUT ; cout             ;
+; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita3 ; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita3      ; combout          ;
+; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita3 ; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita3~COUT ; cout             ;
+; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita4 ; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita4      ; combout          ;
+; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita4 ; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita4~COUT ; cout             ;
+; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita5 ; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita5      ; combout          ;
+; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita5 ; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita5~COUT ; cout             ;
+; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita6 ; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita6      ; combout          ;
+; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita6 ; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita6~COUT ; cout             ;
+; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita7 ; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_comb_bita7      ; combout          ;
+; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_reg_bit[7] ; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_reg_bit[7]      ; regout           ;
+; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_reg_bit[6] ; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_reg_bit[6]      ; regout           ;
+; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_reg_bit[5] ; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_reg_bit[5]      ; regout           ;
+; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_reg_bit[4] ; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_reg_bit[4]      ; regout           ;
+; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_reg_bit[3] ; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_reg_bit[3]      ; regout           ;
+; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_reg_bit[2] ; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_reg_bit[2]      ; regout           ;
+; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_reg_bit[1] ; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_reg_bit[1]      ; regout           ;
+; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_reg_bit[0] ; |actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component|cntr_76i:auto_generated|counter_reg_bit[0]      ; regout           ;
+; |actualizacion_paredes|control:inst|state~0                                                                            ; |actualizacion_paredes|control:inst|state~0                                                                                 ; out              ;
+; |actualizacion_paredes|control:inst|process_0~0                                                                        ; |actualizacion_paredes|control:inst|process_0~0                                                                             ; out0             ;
+; |actualizacion_paredes|control:inst|M0~0                                                                               ; |actualizacion_paredes|control:inst|M0~0                                                                                    ; out              ;
+; |actualizacion_paredes|control:inst|Habilitacion~0                                                                     ; |actualizacion_paredes|control:inst|Habilitacion~0                                                                          ; out              ;
+; |actualizacion_paredes|control:inst|state~1                                                                            ; |actualizacion_paredes|control:inst|state~1                                                                                 ; out              ;
+; |actualizacion_paredes|control:inst|process_0~4                                                                        ; |actualizacion_paredes|control:inst|process_0~4                                                                             ; out0             ;
+; |actualizacion_paredes|control:inst|process_0~6                                                                        ; |actualizacion_paredes|control:inst|process_0~6                                                                             ; out0             ;
+; |actualizacion_paredes|control:inst|M2~1                                                                               ; |actualizacion_paredes|control:inst|M2~1                                                                                    ; out              ;
+; |actualizacion_paredes|control:inst|state~4                                                                            ; |actualizacion_paredes|control:inst|state~4                                                                                 ; out              ;
+; |actualizacion_paredes|control:inst|state~5                                                                            ; |actualizacion_paredes|control:inst|state~5                                                                                 ; out              ;
+; |actualizacion_paredes|control:inst|state~8                                                                            ; |actualizacion_paredes|control:inst|state~8                                                                                 ; out              ;
+; |actualizacion_paredes|control:inst|state~9                                                                            ; |actualizacion_paredes|control:inst|state~9                                                                                 ; out              ;
+; |actualizacion_paredes|control:inst|state~12                                                                           ; |actualizacion_paredes|control:inst|state~12                                                                                ; out              ;
+; |actualizacion_paredes|control:inst|state~13                                                                           ; |actualizacion_paredes|control:inst|state~13                                                                                ; out              ;
+; |actualizacion_paredes|control:inst|state~17                                                                           ; |actualizacion_paredes|control:inst|state~17                                                                                ; out              ;
+; |actualizacion_paredes|control:inst|state~20                                                                           ; |actualizacion_paredes|control:inst|state~20                                                                                ; out              ;
+; |actualizacion_paredes|control:inst|state~21                                                                           ; |actualizacion_paredes|control:inst|state~21                                                                                ; out              ;
+; |actualizacion_paredes|control:inst|state~25                                                                           ; |actualizacion_paredes|control:inst|state~25                                                                                ; out              ;
+; |actualizacion_paredes|control:inst|process_0~9                                                                        ; |actualizacion_paredes|control:inst|process_0~9                                                                             ; out0             ;
+; |actualizacion_paredes|control:inst|process_0~10                                                                       ; |actualizacion_paredes|control:inst|process_0~10                                                                            ; out0             ;
+; |actualizacion_paredes|control:inst|R~0                                                                                ; |actualizacion_paredes|control:inst|R~0                                                                                     ; out              ;
+; |actualizacion_paredes|control:inst|process_0~11                                                                       ; |actualizacion_paredes|control:inst|process_0~11                                                                            ; out0             ;
+; |actualizacion_paredes|control:inst|process_0~12                                                                       ; |actualizacion_paredes|control:inst|process_0~12                                                                            ; out0             ;
+; |actualizacion_paredes|control:inst|process_0~13                                                                       ; |actualizacion_paredes|control:inst|process_0~13                                                                            ; out0             ;
+; |actualizacion_paredes|control:inst|state~27                                                                           ; |actualizacion_paredes|control:inst|state~27                                                                                ; out              ;
+; |actualizacion_paredes|control:inst|state~29                                                                           ; |actualizacion_paredes|control:inst|state~29                                                                                ; out              ;
+; |actualizacion_paredes|control:inst|state~30                                                                           ; |actualizacion_paredes|control:inst|state~30                                                                                ; out              ;
+; |actualizacion_paredes|control:inst|process_0~15                                                                       ; |actualizacion_paredes|control:inst|process_0~15                                                                            ; out0             ;
+; |actualizacion_paredes|control:inst|process_0~16                                                                       ; |actualizacion_paredes|control:inst|process_0~16                                                                            ; out0             ;
+; |actualizacion_paredes|control:inst|cuenta                                                                             ; |actualizacion_paredes|control:inst|cuenta                                                                                  ; regout           ;
+; |actualizacion_paredes|control:inst|cuenta~0                                                                           ; |actualizacion_paredes|control:inst|cuenta~0                                                                                ; out0             ;
+; |actualizacion_paredes|control:inst|WideOr9                                                                            ; |actualizacion_paredes|control:inst|WideOr9                                                                                 ; out0             ;
+; |actualizacion_paredes|control:inst|WideOr10                                                                           ; |actualizacion_paredes|control:inst|WideOr10                                                                                ; out0             ;
+; |actualizacion_paredes|control:inst|state.D                                                                            ; |actualizacion_paredes|control:inst|state.D                                                                                 ; regout           ;
+; |actualizacion_paredes|control:inst|state.auxD                                                                         ; |actualizacion_paredes|control:inst|state.auxD                                                                              ; regout           ;
+; |actualizacion_paredes|control:inst|state.RP                                                                           ; |actualizacion_paredes|control:inst|state.RP                                                                                ; regout           ;
+; |actualizacion_paredes|control:inst|state.Atencion                                                                     ; |actualizacion_paredes|control:inst|state.Atencion                                                                          ; regout           ;
+; |actualizacion_paredes|control:inst|Habilitacion                                                                       ; |actualizacion_paredes|control:inst|Habilitacion                                                                            ; regout           ;
+; |actualizacion_paredes|control:inst|R                                                                                  ; |actualizacion_paredes|control:inst|R                                                                                       ; regout           ;
+; |actualizacion_paredes|control:inst|state~31                                                                           ; |actualizacion_paredes|control:inst|state~31                                                                                ; out0             ;
+; |actualizacion_paredes|control:inst|state~34                                                                           ; |actualizacion_paredes|control:inst|state~34                                                                                ; out0             ;
+; |actualizacion_paredes|control:inst|state~38                                                                           ; |actualizacion_paredes|control:inst|state~38                                                                                ; out0             ;
+; |actualizacion_paredes|control:inst|state~40                                                                           ; |actualizacion_paredes|control:inst|state~40                                                                                ; out0             ;
+; |actualizacion_paredes|control:inst|state~46                                                                           ; |actualizacion_paredes|control:inst|state~46                                                                                ; out0             ;
+; |actualizacion_paredes|control:inst|state~52                                                                           ; |actualizacion_paredes|control:inst|state~52                                                                                ; out0             ;
+; |actualizacion_paredes|control:inst|Selector2~0                                                                        ; |actualizacion_paredes|control:inst|Selector2~0                                                                             ; out0             ;
+; |actualizacion_paredes|control:inst|Selector2~2                                                                        ; |actualizacion_paredes|control:inst|Selector2~2                                                                             ; out0             ;
+; |actualizacion_paredes|control:inst|Selector2~4                                                                        ; |actualizacion_paredes|control:inst|Selector2~4                                                                             ; out0             ;
+; |actualizacion_paredes|control:inst|Selector3~0                                                                        ; |actualizacion_paredes|control:inst|Selector3~0                                                                             ; out0             ;
+; |actualizacion_paredes|control:inst|Selector3~2                                                                        ; |actualizacion_paredes|control:inst|Selector3~2                                                                             ; out0             ;
+; |actualizacion_paredes|control:inst|Selector4~3                                                                        ; |actualizacion_paredes|control:inst|Selector4~3                                                                             ; out0             ;
+; |actualizacion_paredes|control:inst|Selector6~0                                                                        ; |actualizacion_paredes|control:inst|Selector6~0                                                                             ; out0             ;
+; |actualizacion_paredes|control:inst|Selector6~1                                                                        ; |actualizacion_paredes|control:inst|Selector6~1                                                                             ; out0             ;
+; |actualizacion_paredes|control:inst|Selector7~0                                                                        ; |actualizacion_paredes|control:inst|Selector7~0                                                                             ; out0             ;
+; |actualizacion_paredes|control:inst|Selector7~2                                                                        ; |actualizacion_paredes|control:inst|Selector7~2                                                                             ; out0             ;
+; |actualizacion_paredes|control:inst|Selector8~0                                                                        ; |actualizacion_paredes|control:inst|Selector8~0                                                                             ; out0             ;
+; |actualizacion_paredes|control:inst|Selector8~1                                                                        ; |actualizacion_paredes|control:inst|Selector8~1                                                                             ; out0             ;
+; |actualizacion_paredes|control:inst|Selector9~0                                                                        ; |actualizacion_paredes|control:inst|Selector9~0                                                                             ; out0             ;
+; |actualizacion_paredes|control:inst|Selector9~1                                                                        ; |actualizacion_paredes|control:inst|Selector9~1                                                                             ; out0             ;
+; |actualizacion_paredes|control:inst|Selector9~2                                                                        ; |actualizacion_paredes|control:inst|Selector9~2                                                                             ; out0             ;
+; |actualizacion_paredes|control:inst|Selector9~3                                                                        ; |actualizacion_paredes|control:inst|Selector9~3                                                                             ; out0             ;
+; |actualizacion_paredes|control:inst|Selector10~0                                                                       ; |actualizacion_paredes|control:inst|Selector10~0                                                                            ; out0             ;
+; |actualizacion_paredes|control:inst|Selector10~2                                                                       ; |actualizacion_paredes|control:inst|Selector10~2                                                                            ; out0             ;
+; |actualizacion_paredes|control:inst|Selector13~0                                                                       ; |actualizacion_paredes|control:inst|Selector13~0                                                                            ; out0             ;
+; |actualizacion_paredes|control:inst|Selector13~1                                                                       ; |actualizacion_paredes|control:inst|Selector13~1                                                                            ; out0             ;
+; |actualizacion_paredes|control:inst|Selector13~2                                                                       ; |actualizacion_paredes|control:inst|Selector13~2                                                                            ; out0             ;
+; |actualizacion_paredes|lpm_compare0:inst3|lpm_compare:LPM_COMPARE_component|cmpr_vaj:auto_generated|op_1~0             ; |actualizacion_paredes|lpm_compare0:inst3|lpm_compare:LPM_COMPARE_component|cmpr_vaj:auto_generated|op_1~0                  ; out0             ;
+; |actualizacion_paredes|lpm_compare0:inst3|lpm_compare:LPM_COMPARE_component|cmpr_vaj:auto_generated|op_1~1             ; |actualizacion_paredes|lpm_compare0:inst3|lpm_compare:LPM_COMPARE_component|cmpr_vaj:auto_generated|op_1~1                  ; out0             ;
+; |actualizacion_paredes|lpm_compare0:inst3|lpm_compare:LPM_COMPARE_component|cmpr_vaj:auto_generated|op_1~2             ; |actualizacion_paredes|lpm_compare0:inst3|lpm_compare:LPM_COMPARE_component|cmpr_vaj:auto_generated|op_1~2                  ; out0             ;
+; |actualizacion_paredes|lpm_compare0:inst3|lpm_compare:LPM_COMPARE_component|cmpr_vaj:auto_generated|op_1~3             ; |actualizacion_paredes|lpm_compare0:inst3|lpm_compare:LPM_COMPARE_component|cmpr_vaj:auto_generated|op_1~3                  ; out0             ;
+; |actualizacion_paredes|lpm_compare0:inst3|lpm_compare:LPM_COMPARE_component|cmpr_vaj:auto_generated|op_1~4             ; |actualizacion_paredes|lpm_compare0:inst3|lpm_compare:LPM_COMPARE_component|cmpr_vaj:auto_generated|op_1~4                  ; out0             ;
+; |actualizacion_paredes|lpm_compare0:inst3|lpm_compare:LPM_COMPARE_component|cmpr_vaj:auto_generated|op_1~5             ; |actualizacion_paredes|lpm_compare0:inst3|lpm_compare:LPM_COMPARE_component|cmpr_vaj:auto_generated|op_1~5                  ; out0             ;
+; |actualizacion_paredes|lpm_compare0:inst3|lpm_compare:LPM_COMPARE_component|cmpr_vaj:auto_generated|op_1~6             ; |actualizacion_paredes|lpm_compare0:inst3|lpm_compare:LPM_COMPARE_component|cmpr_vaj:auto_generated|op_1~6                  ; out0             ;
+; |actualizacion_paredes|lpm_compare0:inst3|lpm_compare:LPM_COMPARE_component|cmpr_vaj:auto_generated|op_1~7             ; |actualizacion_paredes|lpm_compare0:inst3|lpm_compare:LPM_COMPARE_component|cmpr_vaj:auto_generated|op_1~7                  ; out0             ;
+; |actualizacion_paredes|lpm_compare0:inst3|lpm_compare:LPM_COMPARE_component|cmpr_vaj:auto_generated|op_1~8             ; |actualizacion_paredes|lpm_compare0:inst3|lpm_compare:LPM_COMPARE_component|cmpr_vaj:auto_generated|op_1~8                  ; out0             ;
+; |actualizacion_paredes|lpm_compare0:inst3|lpm_compare:LPM_COMPARE_component|cmpr_vaj:auto_generated|op_1~9             ; |actualizacion_paredes|lpm_compare0:inst3|lpm_compare:LPM_COMPARE_component|cmpr_vaj:auto_generated|op_1~9                  ; out0             ;
+; |actualizacion_paredes|lpm_compare0:inst3|lpm_compare:LPM_COMPARE_component|cmpr_vaj:auto_generated|op_1~10            ; |actualizacion_paredes|lpm_compare0:inst3|lpm_compare:LPM_COMPARE_component|cmpr_vaj:auto_generated|op_1~10                 ; out0             ;
++------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                               ;
++--------------------------------------------------+--------------------------------------------------+------------------+
+; Node Name                                        ; Output Port Name                                 ; Output Port Type ;
++--------------------------------------------------+--------------------------------------------------+------------------+
+; |actualizacion_paredes|reset                     ; |actualizacion_paredes|reset                     ; out              ;
+; |actualizacion_paredes|GI                        ; |actualizacion_paredes|GI                        ; out              ;
+; |actualizacion_paredes|O0                        ; |actualizacion_paredes|O0                        ; out              ;
+; |actualizacion_paredes|O1                        ; |actualizacion_paredes|O1                        ; out              ;
+; |actualizacion_paredes|preM3                     ; |actualizacion_paredes|preM3                     ; out              ;
+; |actualizacion_paredes|preM2                     ; |actualizacion_paredes|preM2                     ; out              ;
+; |actualizacion_paredes|M1                        ; |actualizacion_paredes|M1                        ; pin_out          ;
+; |actualizacion_paredes|inst6                     ; |actualizacion_paredes|inst6                     ; out0             ;
+; |actualizacion_paredes|preM1                     ; |actualizacion_paredes|preM1                     ; out              ;
+; |actualizacion_paredes|M0                        ; |actualizacion_paredes|M0                        ; pin_out          ;
+; |actualizacion_paredes|inst7                     ; |actualizacion_paredes|inst7                     ; out0             ;
+; |actualizacion_paredes|preM0                     ; |actualizacion_paredes|preM0                     ; out              ;
+; |actualizacion_paredes|control:inst|process_0~1  ; |actualizacion_paredes|control:inst|process_0~1  ; out0             ;
+; |actualizacion_paredes|control:inst|process_0~2  ; |actualizacion_paredes|control:inst|process_0~2  ; out0             ;
+; |actualizacion_paredes|control:inst|process_0~3  ; |actualizacion_paredes|control:inst|process_0~3  ; out0             ;
+; |actualizacion_paredes|control:inst|M1~0         ; |actualizacion_paredes|control:inst|M1~0         ; out              ;
+; |actualizacion_paredes|control:inst|process_0~5  ; |actualizacion_paredes|control:inst|process_0~5  ; out0             ;
+; |actualizacion_paredes|control:inst|M0~1         ; |actualizacion_paredes|control:inst|M0~1         ; out              ;
+; |actualizacion_paredes|control:inst|M1~1         ; |actualizacion_paredes|control:inst|M1~1         ; out              ;
+; |actualizacion_paredes|control:inst|process_0~7  ; |actualizacion_paredes|control:inst|process_0~7  ; out0             ;
+; |actualizacion_paredes|control:inst|process_0~8  ; |actualizacion_paredes|control:inst|process_0~8  ; out0             ;
+; |actualizacion_paredes|control:inst|state~2      ; |actualizacion_paredes|control:inst|state~2      ; out              ;
+; |actualizacion_paredes|control:inst|state~3      ; |actualizacion_paredes|control:inst|state~3      ; out              ;
+; |actualizacion_paredes|control:inst|state~6      ; |actualizacion_paredes|control:inst|state~6      ; out              ;
+; |actualizacion_paredes|control:inst|state~7      ; |actualizacion_paredes|control:inst|state~7      ; out              ;
+; |actualizacion_paredes|control:inst|state~10     ; |actualizacion_paredes|control:inst|state~10     ; out              ;
+; |actualizacion_paredes|control:inst|state~11     ; |actualizacion_paredes|control:inst|state~11     ; out              ;
+; |actualizacion_paredes|control:inst|state~14     ; |actualizacion_paredes|control:inst|state~14     ; out              ;
+; |actualizacion_paredes|control:inst|state~15     ; |actualizacion_paredes|control:inst|state~15     ; out              ;
+; |actualizacion_paredes|control:inst|state~16     ; |actualizacion_paredes|control:inst|state~16     ; out              ;
+; |actualizacion_paredes|control:inst|state~18     ; |actualizacion_paredes|control:inst|state~18     ; out              ;
+; |actualizacion_paredes|control:inst|state~19     ; |actualizacion_paredes|control:inst|state~19     ; out              ;
+; |actualizacion_paredes|control:inst|state~22     ; |actualizacion_paredes|control:inst|state~22     ; out              ;
+; |actualizacion_paredes|control:inst|state~23     ; |actualizacion_paredes|control:inst|state~23     ; out              ;
+; |actualizacion_paredes|control:inst|state~24     ; |actualizacion_paredes|control:inst|state~24     ; out              ;
+; |actualizacion_paredes|control:inst|process_0~14 ; |actualizacion_paredes|control:inst|process_0~14 ; out0             ;
+; |actualizacion_paredes|control:inst|state~26     ; |actualizacion_paredes|control:inst|state~26     ; out              ;
+; |actualizacion_paredes|control:inst|state~28     ; |actualizacion_paredes|control:inst|state~28     ; out              ;
+; |actualizacion_paredes|control:inst|M3~2         ; |actualizacion_paredes|control:inst|M3~2         ; out              ;
+; |actualizacion_paredes|control:inst|process_0~17 ; |actualizacion_paredes|control:inst|process_0~17 ; out0             ;
+; |actualizacion_paredes|control:inst|process_0~18 ; |actualizacion_paredes|control:inst|process_0~18 ; out0             ;
+; |actualizacion_paredes|control:inst|process_0~19 ; |actualizacion_paredes|control:inst|process_0~19 ; out0             ;
+; |actualizacion_paredes|control:inst|M0~2         ; |actualizacion_paredes|control:inst|M0~2         ; out              ;
+; |actualizacion_paredes|control:inst|process_0~20 ; |actualizacion_paredes|control:inst|process_0~20 ; out0             ;
+; |actualizacion_paredes|control:inst|M1~2         ; |actualizacion_paredes|control:inst|M1~2         ; out              ;
+; |actualizacion_paredes|control:inst|state.I      ; |actualizacion_paredes|control:inst|state.I      ; regout           ;
+; |actualizacion_paredes|control:inst|state.auxI   ; |actualizacion_paredes|control:inst|state.auxI   ; regout           ;
+; |actualizacion_paredes|control:inst|state.RPI    ; |actualizacion_paredes|control:inst|state.RPI    ; regout           ;
+; |actualizacion_paredes|control:inst|M1           ; |actualizacion_paredes|control:inst|M1           ; regout           ;
+; |actualizacion_paredes|control:inst|M0           ; |actualizacion_paredes|control:inst|M0           ; regout           ;
+; |actualizacion_paredes|control:inst|state~32     ; |actualizacion_paredes|control:inst|state~32     ; out0             ;
+; |actualizacion_paredes|control:inst|state~36     ; |actualizacion_paredes|control:inst|state~36     ; out0             ;
+; |actualizacion_paredes|control:inst|state~44     ; |actualizacion_paredes|control:inst|state~44     ; out0             ;
+; |actualizacion_paredes|control:inst|state~48     ; |actualizacion_paredes|control:inst|state~48     ; out0             ;
+; |actualizacion_paredes|control:inst|state~56     ; |actualizacion_paredes|control:inst|state~56     ; out0             ;
+; |actualizacion_paredes|control:inst|Selector0~0  ; |actualizacion_paredes|control:inst|Selector0~0  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector0~1  ; |actualizacion_paredes|control:inst|Selector0~1  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector0~2  ; |actualizacion_paredes|control:inst|Selector0~2  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector0~3  ; |actualizacion_paredes|control:inst|Selector0~3  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector0~4  ; |actualizacion_paredes|control:inst|Selector0~4  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector1~0  ; |actualizacion_paredes|control:inst|Selector1~0  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector1~1  ; |actualizacion_paredes|control:inst|Selector1~1  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector1~2  ; |actualizacion_paredes|control:inst|Selector1~2  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector2~1  ; |actualizacion_paredes|control:inst|Selector2~1  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector2~3  ; |actualizacion_paredes|control:inst|Selector2~3  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector3~1  ; |actualizacion_paredes|control:inst|Selector3~1  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector4~1  ; |actualizacion_paredes|control:inst|Selector4~1  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector5~0  ; |actualizacion_paredes|control:inst|Selector5~0  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector5~1  ; |actualizacion_paredes|control:inst|Selector5~1  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector5~2  ; |actualizacion_paredes|control:inst|Selector5~2  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector5~3  ; |actualizacion_paredes|control:inst|Selector5~3  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector6~2  ; |actualizacion_paredes|control:inst|Selector6~2  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector7~1  ; |actualizacion_paredes|control:inst|Selector7~1  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector8~2  ; |actualizacion_paredes|control:inst|Selector8~2  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector9~4  ; |actualizacion_paredes|control:inst|Selector9~4  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector10~1 ; |actualizacion_paredes|control:inst|Selector10~1 ; out0             ;
+; |actualizacion_paredes|control:inst|Selector10~4 ; |actualizacion_paredes|control:inst|Selector10~4 ; out0             ;
+; |actualizacion_paredes|control:inst|Selector11~0 ; |actualizacion_paredes|control:inst|Selector11~0 ; out0             ;
+; |actualizacion_paredes|control:inst|Selector11~1 ; |actualizacion_paredes|control:inst|Selector11~1 ; out0             ;
+; |actualizacion_paredes|control:inst|Selector11~2 ; |actualizacion_paredes|control:inst|Selector11~2 ; out0             ;
+; |actualizacion_paredes|control:inst|Selector11~3 ; |actualizacion_paredes|control:inst|Selector11~3 ; out0             ;
+; |actualizacion_paredes|control:inst|Selector11~4 ; |actualizacion_paredes|control:inst|Selector11~4 ; out0             ;
+; |actualizacion_paredes|control:inst|Selector12~0 ; |actualizacion_paredes|control:inst|Selector12~0 ; out0             ;
+; |actualizacion_paredes|control:inst|Selector12~1 ; |actualizacion_paredes|control:inst|Selector12~1 ; out0             ;
+; |actualizacion_paredes|control:inst|Selector12~2 ; |actualizacion_paredes|control:inst|Selector12~2 ; out0             ;
+; |actualizacion_paredes|control:inst|Selector12~3 ; |actualizacion_paredes|control:inst|Selector12~3 ; out0             ;
+; |actualizacion_paredes|control:inst|Selector12~4 ; |actualizacion_paredes|control:inst|Selector12~4 ; out0             ;
+; |actualizacion_paredes|control:inst|Selector13~3 ; |actualizacion_paredes|control:inst|Selector13~3 ; out0             ;
++--------------------------------------------------+--------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                               ;
++--------------------------------------------------+--------------------------------------------------+------------------+
+; Node Name                                        ; Output Port Name                                 ; Output Port Type ;
++--------------------------------------------------+--------------------------------------------------+------------------+
+; |actualizacion_paredes|M3                        ; |actualizacion_paredes|M3                        ; pin_out          ;
+; |actualizacion_paredes|inst4                     ; |actualizacion_paredes|inst4                     ; out0             ;
+; |actualizacion_paredes|GI                        ; |actualizacion_paredes|GI                        ; out              ;
+; |actualizacion_paredes|O0                        ; |actualizacion_paredes|O0                        ; out              ;
+; |actualizacion_paredes|O1                        ; |actualizacion_paredes|O1                        ; out              ;
+; |actualizacion_paredes|preM3                     ; |actualizacion_paredes|preM3                     ; out              ;
+; |actualizacion_paredes|M2                        ; |actualizacion_paredes|M2                        ; pin_out          ;
+; |actualizacion_paredes|inst5                     ; |actualizacion_paredes|inst5                     ; out0             ;
+; |actualizacion_paredes|preM2                     ; |actualizacion_paredes|preM2                     ; out              ;
+; |actualizacion_paredes|M1                        ; |actualizacion_paredes|M1                        ; pin_out          ;
+; |actualizacion_paredes|inst6                     ; |actualizacion_paredes|inst6                     ; out0             ;
+; |actualizacion_paredes|preM1                     ; |actualizacion_paredes|preM1                     ; out              ;
+; |actualizacion_paredes|M0                        ; |actualizacion_paredes|M0                        ; pin_out          ;
+; |actualizacion_paredes|inst7                     ; |actualizacion_paredes|inst7                     ; out0             ;
+; |actualizacion_paredes|preM0                     ; |actualizacion_paredes|preM0                     ; out              ;
+; |actualizacion_paredes|control:inst|process_0~1  ; |actualizacion_paredes|control:inst|process_0~1  ; out0             ;
+; |actualizacion_paredes|control:inst|process_0~2  ; |actualizacion_paredes|control:inst|process_0~2  ; out0             ;
+; |actualizacion_paredes|control:inst|M3~0         ; |actualizacion_paredes|control:inst|M3~0         ; out              ;
+; |actualizacion_paredes|control:inst|process_0~3  ; |actualizacion_paredes|control:inst|process_0~3  ; out0             ;
+; |actualizacion_paredes|control:inst|M2~0         ; |actualizacion_paredes|control:inst|M2~0         ; out              ;
+; |actualizacion_paredes|control:inst|M1~0         ; |actualizacion_paredes|control:inst|M1~0         ; out              ;
+; |actualizacion_paredes|control:inst|process_0~5  ; |actualizacion_paredes|control:inst|process_0~5  ; out0             ;
+; |actualizacion_paredes|control:inst|M3~1         ; |actualizacion_paredes|control:inst|M3~1         ; out              ;
+; |actualizacion_paredes|control:inst|M0~1         ; |actualizacion_paredes|control:inst|M0~1         ; out              ;
+; |actualizacion_paredes|control:inst|M1~1         ; |actualizacion_paredes|control:inst|M1~1         ; out              ;
+; |actualizacion_paredes|control:inst|process_0~7  ; |actualizacion_paredes|control:inst|process_0~7  ; out0             ;
+; |actualizacion_paredes|control:inst|process_0~8  ; |actualizacion_paredes|control:inst|process_0~8  ; out0             ;
+; |actualizacion_paredes|control:inst|state~2      ; |actualizacion_paredes|control:inst|state~2      ; out              ;
+; |actualizacion_paredes|control:inst|state~3      ; |actualizacion_paredes|control:inst|state~3      ; out              ;
+; |actualizacion_paredes|control:inst|state~6      ; |actualizacion_paredes|control:inst|state~6      ; out              ;
+; |actualizacion_paredes|control:inst|state~7      ; |actualizacion_paredes|control:inst|state~7      ; out              ;
+; |actualizacion_paredes|control:inst|state~10     ; |actualizacion_paredes|control:inst|state~10     ; out              ;
+; |actualizacion_paredes|control:inst|state~11     ; |actualizacion_paredes|control:inst|state~11     ; out              ;
+; |actualizacion_paredes|control:inst|state~14     ; |actualizacion_paredes|control:inst|state~14     ; out              ;
+; |actualizacion_paredes|control:inst|state~15     ; |actualizacion_paredes|control:inst|state~15     ; out              ;
+; |actualizacion_paredes|control:inst|state~16     ; |actualizacion_paredes|control:inst|state~16     ; out              ;
+; |actualizacion_paredes|control:inst|state~18     ; |actualizacion_paredes|control:inst|state~18     ; out              ;
+; |actualizacion_paredes|control:inst|state~19     ; |actualizacion_paredes|control:inst|state~19     ; out              ;
+; |actualizacion_paredes|control:inst|state~22     ; |actualizacion_paredes|control:inst|state~22     ; out              ;
+; |actualizacion_paredes|control:inst|state~23     ; |actualizacion_paredes|control:inst|state~23     ; out              ;
+; |actualizacion_paredes|control:inst|state~24     ; |actualizacion_paredes|control:inst|state~24     ; out              ;
+; |actualizacion_paredes|control:inst|process_0~14 ; |actualizacion_paredes|control:inst|process_0~14 ; out0             ;
+; |actualizacion_paredes|control:inst|state~26     ; |actualizacion_paredes|control:inst|state~26     ; out              ;
+; |actualizacion_paredes|control:inst|state~28     ; |actualizacion_paredes|control:inst|state~28     ; out              ;
+; |actualizacion_paredes|control:inst|M3~2         ; |actualizacion_paredes|control:inst|M3~2         ; out              ;
+; |actualizacion_paredes|control:inst|process_0~17 ; |actualizacion_paredes|control:inst|process_0~17 ; out0             ;
+; |actualizacion_paredes|control:inst|process_0~18 ; |actualizacion_paredes|control:inst|process_0~18 ; out0             ;
+; |actualizacion_paredes|control:inst|M2~2         ; |actualizacion_paredes|control:inst|M2~2         ; out              ;
+; |actualizacion_paredes|control:inst|process_0~19 ; |actualizacion_paredes|control:inst|process_0~19 ; out0             ;
+; |actualizacion_paredes|control:inst|M0~2         ; |actualizacion_paredes|control:inst|M0~2         ; out              ;
+; |actualizacion_paredes|control:inst|process_0~20 ; |actualizacion_paredes|control:inst|process_0~20 ; out0             ;
+; |actualizacion_paredes|control:inst|M1~2         ; |actualizacion_paredes|control:inst|M1~2         ; out              ;
+; |actualizacion_paredes|control:inst|state.I      ; |actualizacion_paredes|control:inst|state.I      ; regout           ;
+; |actualizacion_paredes|control:inst|state.auxI   ; |actualizacion_paredes|control:inst|state.auxI   ; regout           ;
+; |actualizacion_paredes|control:inst|state.RPD    ; |actualizacion_paredes|control:inst|state.RPD    ; regout           ;
+; |actualizacion_paredes|control:inst|state.RPI    ; |actualizacion_paredes|control:inst|state.RPI    ; regout           ;
+; |actualizacion_paredes|control:inst|M3           ; |actualizacion_paredes|control:inst|M3           ; regout           ;
+; |actualizacion_paredes|control:inst|M2           ; |actualizacion_paredes|control:inst|M2           ; regout           ;
+; |actualizacion_paredes|control:inst|M1           ; |actualizacion_paredes|control:inst|M1           ; regout           ;
+; |actualizacion_paredes|control:inst|M0           ; |actualizacion_paredes|control:inst|M0           ; regout           ;
+; |actualizacion_paredes|control:inst|state~36     ; |actualizacion_paredes|control:inst|state~36     ; out0             ;
+; |actualizacion_paredes|control:inst|state~42     ; |actualizacion_paredes|control:inst|state~42     ; out0             ;
+; |actualizacion_paredes|control:inst|state~44     ; |actualizacion_paredes|control:inst|state~44     ; out0             ;
+; |actualizacion_paredes|control:inst|state~48     ; |actualizacion_paredes|control:inst|state~48     ; out0             ;
+; |actualizacion_paredes|control:inst|Selector0~0  ; |actualizacion_paredes|control:inst|Selector0~0  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector0~1  ; |actualizacion_paredes|control:inst|Selector0~1  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector0~2  ; |actualizacion_paredes|control:inst|Selector0~2  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector0~3  ; |actualizacion_paredes|control:inst|Selector0~3  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector0~4  ; |actualizacion_paredes|control:inst|Selector0~4  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector1~0  ; |actualizacion_paredes|control:inst|Selector1~0  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector1~1  ; |actualizacion_paredes|control:inst|Selector1~1  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector1~2  ; |actualizacion_paredes|control:inst|Selector1~2  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector2~1  ; |actualizacion_paredes|control:inst|Selector2~1  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector2~3  ; |actualizacion_paredes|control:inst|Selector2~3  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector3~1  ; |actualizacion_paredes|control:inst|Selector3~1  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector4~0  ; |actualizacion_paredes|control:inst|Selector4~0  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector4~1  ; |actualizacion_paredes|control:inst|Selector4~1  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector4~2  ; |actualizacion_paredes|control:inst|Selector4~2  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector5~0  ; |actualizacion_paredes|control:inst|Selector5~0  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector5~1  ; |actualizacion_paredes|control:inst|Selector5~1  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector5~2  ; |actualizacion_paredes|control:inst|Selector5~2  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector5~3  ; |actualizacion_paredes|control:inst|Selector5~3  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector6~2  ; |actualizacion_paredes|control:inst|Selector6~2  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector7~1  ; |actualizacion_paredes|control:inst|Selector7~1  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector8~2  ; |actualizacion_paredes|control:inst|Selector8~2  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector9~4  ; |actualizacion_paredes|control:inst|Selector9~4  ; out0             ;
+; |actualizacion_paredes|control:inst|Selector10~1 ; |actualizacion_paredes|control:inst|Selector10~1 ; out0             ;
+; |actualizacion_paredes|control:inst|Selector10~3 ; |actualizacion_paredes|control:inst|Selector10~3 ; out0             ;
+; |actualizacion_paredes|control:inst|Selector10~4 ; |actualizacion_paredes|control:inst|Selector10~4 ; out0             ;
+; |actualizacion_paredes|control:inst|Selector11~0 ; |actualizacion_paredes|control:inst|Selector11~0 ; out0             ;
+; |actualizacion_paredes|control:inst|Selector11~1 ; |actualizacion_paredes|control:inst|Selector11~1 ; out0             ;
+; |actualizacion_paredes|control:inst|Selector11~2 ; |actualizacion_paredes|control:inst|Selector11~2 ; out0             ;
+; |actualizacion_paredes|control:inst|Selector11~3 ; |actualizacion_paredes|control:inst|Selector11~3 ; out0             ;
+; |actualizacion_paredes|control:inst|Selector11~4 ; |actualizacion_paredes|control:inst|Selector11~4 ; out0             ;
+; |actualizacion_paredes|control:inst|Selector12~0 ; |actualizacion_paredes|control:inst|Selector12~0 ; out0             ;
+; |actualizacion_paredes|control:inst|Selector12~1 ; |actualizacion_paredes|control:inst|Selector12~1 ; out0             ;
+; |actualizacion_paredes|control:inst|Selector12~2 ; |actualizacion_paredes|control:inst|Selector12~2 ; out0             ;
+; |actualizacion_paredes|control:inst|Selector12~3 ; |actualizacion_paredes|control:inst|Selector12~3 ; out0             ;
+; |actualizacion_paredes|control:inst|Selector12~4 ; |actualizacion_paredes|control:inst|Selector12~4 ; out0             ;
+; |actualizacion_paredes|control:inst|Selector13~3 ; |actualizacion_paredes|control:inst|Selector13~3 ; out0             ;
++--------------------------------------------------+--------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Nov 25 14:32:37 2024
+Info: Command: quartus_sim --simulation_results_format=VWF control -c control_qsim
+Info (324025): Using vector source file "F:/Users/Administrador/Documents/GitHub/control/Waveform2.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      50.24 %
+Info (328052): Number of transitions in simulation is 11772
+Info (324045): Vector file control_qsim.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4440 megabytes
+    Info: Processing ended: Mon Nov 25 14:32:38 2024
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

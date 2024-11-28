@@ -1,0 +1,11 @@
+
+State Machine - |actualizacion_paredes|control:inst|state
+Name state.I state.RP state.RPI state.RPD state.auxD state.D state.auxI state.Atencion 
+state.Atencion 0 0 0 0 0 0 0 0 
+state.auxI 0 0 0 0 0 0 1 1 
+state.D 0 0 0 0 0 1 0 1 
+state.auxD 0 0 0 0 1 0 0 1 
+state.RPD 0 0 0 1 0 0 0 1 
+state.RPI 0 0 1 0 0 0 0 1 
+state.RP 0 1 0 0 0 0 0 1 
+state.I 1 0 0 0 0 0 0 1 

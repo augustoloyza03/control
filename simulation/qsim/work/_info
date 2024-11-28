@@ -1,0 +1,157 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\Users\Administrador\Documents\GitHub\control\simulation\qsim
+vcontrol
+Z1 !s100 ]bGnnbIC`KJi`19K?_?g41
+Z2 I2?^ZR9BzcnNgEAI0[1QG`2
+Z3 VcI`8`MhoPe[d9B@48hLJ83
+Z4 dF:\Users\Administrador\Documents\GitHub\control\simulation\qsim
+Z5 w1732414755
+Z6 8control.vo
+Z7 Fcontrol.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|control.vo|
+Z10 o-work work -O0
+Z11 !s108 1732414757.089000
+Z12 !s107 control.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vcontrol2
+Z13 !s100 e`=Q`A`]TYV40g?H1QzoI2
+Z14 IXh^>Wh5gMJig`8oRIn=ZB3
+Z15 V68zg:l9WCR^1hXFAd[^e23
+R4
+Z16 w1732735892
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+!i10b 1
+!s85 0
+Z17 !s108 1732735893.666000
+R12
+!s101 -O0
+vcontrol2_vlg_check_tst
+!i10b 1
+Z18 !s100 aQmMjZ65Tgg?9^NTAoi2j1
+Z19 Ih3kDn@h@;f2fiK=gW8a`a0
+Z20 Vg1;=4K>>DGFI>fAOSohXb3
+R4
+Z21 w1732735890
+Z22 8control.vt
+Z23 Fcontrol.vt
+L0 73
+R8
+r1
+!s85 0
+31
+Z24 !s108 1732735893.885000
+Z25 !s107 control.vt|
+Z26 !s90 -work|work|control.vt|
+!s101 -O0
+R10
+vcontrol2_vlg_sample_tst
+!i10b 1
+Z27 !s100 gGo6KPSmFn?Q_c8VTmizE1
+Z28 IfH1T:211eh06`RMD>1UDG1
+Z29 V<]zbGXGHngh6VgLoV<WXO2
+R4
+R21
+R22
+R23
+L0 29
+R8
+r1
+!s85 0
+31
+R24
+R25
+R26
+!s101 -O0
+R10
+vcontrol2_vlg_vec_tst
+!i10b 1
+!s100 TDFAJUnfm4W8Ke08Mk=dG3
+I8@lAVzC^^PNJo_H4bmikf1
+Z30 VZ[Y1lh6akQ_?@bB7Tz0:E0
+R4
+R21
+R22
+R23
+Z31 L0 249
+R8
+r1
+!s85 0
+31
+R24
+R25
+R26
+!s101 -O0
+R10
+vcontrol_vlg_check_tst
+Z32 !s100 Q_2Y2ZXU<NLIM3ONAMjfF3
+Z33 IYc5Y8IQVKY;>l9<DbO]kD3
+Z34 VcHRhl1Pcc=HgZlCceOEEo3
+R4
+Z35 w1732414754
+R22
+R23
+L0 71
+R8
+r1
+31
+Z36 !s108 1732414757.344000
+Z37 !s107 control.vt|
+R26
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vcontrol_vlg_sample_tst
+Z38 !s100 j7ZLG@4MLEz`P`z61Z^^B1
+Z39 If`J4bB]TN:dimcFb2=cBE0
+Z40 VE[2gD7UGBU6OS`UzZb2C51
+R4
+R35
+R22
+R23
+L0 29
+R8
+r1
+31
+R36
+R37
+R26
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vcontrol_vlg_vec_tst
+Z41 IZ_H11=<MRT3n`<24jz>]A1
+Z42 V5NXK<oZgKCORaVm;a@7J`0
+R4
+R35
+R22
+R23
+Z43 L0 382
+R8
+r1
+31
+R36
+R37
+R26
+R10
+Z44 !s100 kb;2EX2Cb;TeWF4Pz?oLR3
+!i10b 1
+!s85 0
+!s101 -O0

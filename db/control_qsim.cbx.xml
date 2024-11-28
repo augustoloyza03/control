@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="control_qsim">
+		<CBX_INST_ENTRY INSTANCE_NAME="|actualizacion_paredes|lpm_compare0:inst3|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_vaj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|actualizacion_paredes|lpm_counter0:inst2|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_76i.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

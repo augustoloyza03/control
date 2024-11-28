@@ -1,0 +1,51 @@
+|actualizacion_paredes
+M[0] <= control2:inst1.M[0]
+M[1] <= control2:inst1.M[1]
+M[2] <= control2:inst1.M[2]
+M[3] <= control2:inst1.M[3]
+clk => control2:inst1.clk
+s => control2:inst1.s
+tc1 => control2:inst1.tc1
+tc2 => control2:inst1.tc2
+O1 => control2:inst1.O1
+O0 => control2:inst1.O0
+GI => control2:inst1.GI
+GD => control2:inst1.GD
+reset => control2:inst1.reset
+
+
+|actualizacion_paredes|control2:inst1
+clk => M0_reg.CLK
+clk => M1_reg.CLK
+clk => M2_reg.CLK
+clk => M3_reg.CLK
+clk => GD_prev.CLK
+clk => GI_prev.CLK
+clk => state.CLK
+s => process_0.IN1
+s => state.OUTPUTSELECT
+tc1 => process_0.IN0
+tc2 => process_0.IN1
+O1 => process_2.IN0
+O1 => process_2.IN0
+O1 => process_2.IN0
+O1 => process_2.IN0
+O0 => process_2.IN1
+O0 => process_2.IN1
+O0 => process_2.IN1
+O0 => process_2.IN1
+GI => process_0.IN1
+GI => GI_prev.DATAIN
+GD => process_0.IN1
+GD => GD_prev.DATAIN
+reset => M0_reg.ACLR
+reset => M1_reg.ACLR
+reset => M2_reg.ACLR
+reset => M3_reg.ACLR
+reset => state.ACLR
+M[0] <= M0_reg.DB_MAX_OUTPUT_PORT_TYPE
+M[1] <= M1_reg.DB_MAX_OUTPUT_PORT_TYPE
+M[2] <= M2_reg.DB_MAX_OUTPUT_PORT_TYPE
+M[3] <= M3_reg.DB_MAX_OUTPUT_PORT_TYPE
+
+
